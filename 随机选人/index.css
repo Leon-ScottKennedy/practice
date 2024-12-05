@@ -1,0 +1,56 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  background-image:linear-gradient(60deg, #0d0f11 0%, #22272b 100%);
+  height: 100vh;
+}
+
+.图片区 {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+  /* border: solid rgb(255, 0, 0); */
+}
+
+.图片区 > img {
+  width: 500px;
+  height: 500px;
+  object-fit: cover;
+  clip-path: circle(50%);
+}
+
+.名字区{
+  height: 200px;
+  /* border: solid red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.名字区 >p{
+  font-size: 3rem;
+  color: bisque;
+}
+
+.按钮区{
+  height: 200px;
+  /* border:  solid red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.按钮区 > button{
+  width: 200px;
+  height: 100px;
+  background-color: blanchedalmond;
+  font-size: 2rem;
+  border-radius: 15px;
+}
