@@ -49,16 +49,18 @@
 }
 
 .按钮区 {
-  height: 10%;
+  height: 20%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
 
 .按钮区 > button {
+  margin: 30px;
   width: 200px;
-  height: 50%;
+  height: 80px;
   background-color: blanchedalmond;
   font-size: 2rem;
   border-radius: 15px;
