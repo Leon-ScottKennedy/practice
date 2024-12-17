@@ -1,0 +1,45 @@
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(60deg, #0d0f11 0%, #22272b 100%);
+  background-attachment: fixed;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+  /* border: solid red; */
+}
+
+.main > img {
+  width: 600px;
+  height: 600px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.main > p {
+  color: white;
+  font-size: 80px;
+  margin-top: 60px;
+}
+
+.main > button {
+  width: 200px;
+  height: 80px;
+  /* line-height: 40px; */
+  background-color: rgb(228, 188, 103);
+  font-size: 45px;
+  border: none;
+  border-radius: 20px;
+  color: white;
+  margin-top: 60px;
+}
