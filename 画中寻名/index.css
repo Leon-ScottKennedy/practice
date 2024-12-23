@@ -1,0 +1,57 @@
+*,
+::after,
+::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.top{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.main{
+  display: flex;
+  justify-content: space-around;
+}
+
+.人物名字区{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border: solid black;
+}
+
+.选择人物区{
+  display: flex;
+  justify-content: center;
+}
+
+.提示{
+  text-align: center;
+}
+
+.人物姓名{
+  display: grid;
+  grid-template-columns: repeat(3,6vw);
+  grid-template-rows: repeat(6,4vh);
+  gap: 5px;
+}
+
+.人物肖像区{
+  border: solid black;
+  display: grid;
+  grid-template-columns:repeat(6,1fr);
+  grid-template-rows: repeat(3,1fr);
+  gap: 5px;
+}
+
+.图片>img{
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+border-radius: 20px;
+}
