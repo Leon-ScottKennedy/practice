@@ -6,52 +6,50 @@
   box-sizing: border-box;
 }
 
-.top{
+.main {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 50px;
+  border: solid red;
 }
 
-.main{
-  display: flex;
-  justify-content: space-around;
-}
-
-.人物名字区{
+.left {
+  flex: 1;
+  border: solid rgb(0, 0, 0);
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  border: solid black;
+  justify-content: space-between;
+  row-gap: 30vh;
 }
 
-.选择人物区{
-  display: flex;
-  justify-content: center;
-}
-
-.提示{
+.计时区 {
   text-align: center;
 }
 
-.人物姓名{
+.人物名字区 {
   display: grid;
-  grid-template-columns: repeat(3,6vw);
-  grid-template-rows: repeat(6,4vh);
   gap: 5px;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(4, 1fr);
 }
 
-.人物肖像区{
-  border: solid black;
-  display: grid;
-  grid-template-columns:repeat(6,1fr);
-  grid-template-rows: repeat(3,1fr);
-  gap: 5px;
+.名字 {
+  width: 100px;
+  height: 50px;
 }
 
-.图片>img{
-  width: 200px;
-  height: 200px;
+
+
+.人物肖像区 {
+  flex: 3;
+  border: solid red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.人物肖像区 img{
+  width: 300px;
+  height: 300px;
   object-fit: cover;
-border-radius: 20px;
+
 }
