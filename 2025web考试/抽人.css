@@ -1,0 +1,23 @@
+.main{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#肖像{
+  width: 500px;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+#姓名{
+  font-size: 40px;
+}
+
+#按钮{
+  width: 120px;
+  height: 60px;
+}

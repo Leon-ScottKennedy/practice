@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+    body{
+      text-align: center;
+    }
+    </style>
+    <script defer>
+      setInterval(() => {
+        const time = new Date();
+        document.getElementById("时间").textContent =
+          time.getHours() + ":" + time.getMinutes() + ":" + time.getSeconds();
+      }, 1000);
+    </script>
+  </head>
+  <body>
+    <p>
+      现在的时间是:
+      <span id="时间"></span>
+    </p>
+  </body>
+</html>
